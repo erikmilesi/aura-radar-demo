@@ -1,5 +1,4 @@
 services:
-  # Motor de Cálculo (Backend Blindado)
   motor-aura:
     image: erikmilesi/aura-motor:v1.0
     container_name: aura_api_demo
@@ -7,10 +6,11 @@ services:
       - "8000:8000"
     restart: always
 
-  # Interface Tática (Frontend)
   interface-aura:
     image: erikmilesi/aura-interface:v1.0
     container_name: aura_frontend_demo
+    # FORÇAMOS O COMANDO CORRETO AQUI:
+    command: [ "streamlit", "run", "frontend.py", "--server.port=8501", "--server.address=0.0.0.0" ]
     ports:
       - "8501:8501"
     depends_on:

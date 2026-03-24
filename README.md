@@ -1,5 +1,7 @@
 # 📡 AURA - Tactical Radar Prediction System (Demo)
 
+![Demonstração da Interface Tática AURA](assets/demo.png)
+
 Este repositório contém a versão de demonstração do **AURA**, um motor tático para predição de alcance radar baseado em propagação **SSFT (Split-Step Fourier Transform)**.
 
 O sistema analisa o impacto de anomalias de refração atmosférica (dutos de evaporação e camadas de inversão) na Probabilidade de Detecção ($P_d$) de sensores em ambiente marítimo.
