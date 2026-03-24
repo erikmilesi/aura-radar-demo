@@ -1,0 +1,15 @@
+Parametro,Valor
+freq_MHz,900.0
+Pt_kW,360.0
+tau_us,125.0
+NF_dB,3.0
+L_sys_dB,3.0
+G_dBi,28.0
+theta_v_deg,9.0
+theta_h_deg,3.3
+tilt_deg,2.0
+rpm,12.0
+prf_hz,800.0
+pfa_exp,8.0
+RCS_sqm,94.0
+altura_m,30.0

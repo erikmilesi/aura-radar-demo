@@ -1,0 +1,18 @@
+services:
+  # Motor de Cálculo (Backend Blindado)
+  motor-aura:
+    image: erikmilesi/aura-motor:v1.0
+    container_name: aura_api_demo
+    ports:
+      - "8000:8000"
+    restart: always
+
+  # Interface Tática (Frontend)
+  interface-aura:
+    image: erikmilesi/aura-interface:v1.0
+    container_name: aura_frontend_demo
+    ports:
+      - "8501:8501"
+    depends_on:
+      - motor-aura
+    restart: always
